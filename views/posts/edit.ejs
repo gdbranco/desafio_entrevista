@@ -1,0 +1,6 @@
+Editar post
+
+<form action="/posts/<%=post._id%>?_method=PUT" method="post">
+    <input style="height:2em;width: 30%" type="text" id="inputPostTitle" name="post[title]" value="<%=post.title%>"><br>
+    <input style="height:2em;width: 50%" type="text" id="inputPostBody" name="post[body]" value="<%=post.body%>"> <button type="submit">Atualizar</button> <a href="/posts/<%=post._id%>">Voltar</a><br>
+</form>
